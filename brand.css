@@ -1,6 +1,7 @@
 :root{ 
     --overall-color: #000000; /* Light gray background for the page */
     --header-color: #2e2e2e; /* Dark gray background for header */
+    --about-us-color: #2e2e2e;
 }
 
 *{
@@ -63,3 +64,33 @@
     padding-top: 35px;
     text-decoration: underline;
 }
+
+#banner{
+    width: 100%;
+}
+
+#about_us{
+    background-color: var(--about-us-color);
+    text-align: center;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about_us_container{
+    color: white;
+    background-color: var(--about-us-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about_us_header{
+    background-color: var(--about-us-color);
+}
+
+.about_us_body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--about-us-color);
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
