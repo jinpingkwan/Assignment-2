@@ -1,23 +1,65 @@
+:root{ 
+    --overall-color: #000000; /* Light gray background for the page */
+    --header-color: #2e2e2e; /* Dark gray background for header */
+}
 
 *{
-    background-color: black;
+    background-color: var(--overall-color);
+    font-family: 'Megrim', cursive;
 }
 
 .header_container{
     display: grid;
-    color: gold;
-    background-color: black;
+    color: white;
+    background-color: var(--header-color);
     text-align: center;
+    grid-template-columns: repeat(20, 1fr);
+    /* grid-template-rows: repeat(1, 1fr); */
 }
 
-.logo{
-    display: grid;
-    grid-column-start: 2;
-    grid-template-columns: 3;
+#header{
+    background-color: var(--header-color);
 }
 
-.brand_name{
+.header_logo{
     display: grid;
-    grid-column-start: 3;
-    grid-template-columns: 5;
+    grid-column: 2 / 3;
+    background-color: var(--header-color);
+    /* grid-template-columns: 3; */
+    /* border: 1px solid white; */
+}
+
+.header_brand_name{
+    display: grid;
+    grid-column: 3 / 7;
+    grid-row: 1 / 1;
+    text-align: left;
+    font-size: 20px;
+    background-color: var(--header-color);
+    /* grid-template-columns: 5; */
+    /* border: 1px solid white;  */
+}
+
+.header_menu{
+    display: grid;
+    grid-column: 15 / 16;
+    grid-row: 1 / 1;
+    text-align: center;
+    font-size: 20px;
+    background-color: var(--header-color);
+    /* border: 1px solid white; */
+    padding-top: 35px;
+    text-decoration: underline;
+}
+
+.header_about_us{
+    display: grid;
+    grid-column: 16 / 18;
+    grid-row: 1 / 1;
+    text-align: center;
+    font-size: 20px;
+    background-color: var(--header-color);
+    /* border: 1px solid white; */
+    padding-top: 35px;
+    text-decoration: underline;
 }
