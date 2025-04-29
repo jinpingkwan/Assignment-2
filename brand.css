@@ -1,0 +1,23 @@
+
+*{
+    background-color: black;
+}
+
+.header_container{
+    display: grid;
+    color: gold;
+    background-color: black;
+    text-align: center;
+}
+
+.logo{
+    display: grid;
+    grid-column-start: 2;
+    grid-template-columns: 3;
+}
+
+.brand_name{
+    display: grid;
+    grid-column-start: 3;
+    grid-template-columns: 5;
+}
