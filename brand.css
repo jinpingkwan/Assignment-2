@@ -2,6 +2,10 @@
     --overall-color: #2e2e2e; /* Light gray background for the page */
     --header-color: #2e2e2e; /* Dark gray background for header */
     --about-us-color: #2e2e2e;
+    --normal-link: #00bfff; /* Normal link color */
+    --hover-link: #1e90ff; /* Hover link color */
+    --active-link: #FF4500; /* Active link color */
+    --visited-link: #9370DB; /* Visited link color */
 }
 
 *{
@@ -84,20 +88,24 @@
 a{
     display: grid;
     text-decoration: underline;
-    color: #00bfff;
+    color: var(--normal-link);
     height: 75px;
 }
 
 a:hover{
-    color: #1e90ff;
+    color: var(--hover-link);
 }
 
 a:active{
-    color: #FF4500
+    color: var(--active-link);
 }
 
 a:visited{
-    color: #9370DB
+    color: var(--visited-link);
+}
+
+a.header_about_us:visited{
+    color: var(--normal-link);
 }
 
 #banner{
