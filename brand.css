@@ -104,12 +104,16 @@ a.header_about_us:visited{
     color: var(--normal-link);
 }
 
+a.header_menu:visited{
+    color: var(--normal-link);
+}
 #banner{
     width: 100%;
 }
 
-#menu, #about_us{
+#menu, #about_us, #milk_tea, #fruit_tea ,#pure_tea,#new_launch{
     scroll-margin-top: 80px;
+    
 }
 
 .about_us_container{
@@ -258,6 +262,7 @@ p.founder_1, p.founder_2, p.founder_3{
     font-family:  "Helvetica", sans-serif; */
 
 }
+
 .menu_list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -269,7 +274,102 @@ p.founder_1, p.founder_2, p.founder_3{
     justify-content: space-around;
     align-content: center;
     font-family:  Helvetica, sans-serif;
+    border: 1px solid white;
 }
+
+.menu_category{
+    display: grid;
+    background-color: var(--overall-color);
+    margin: 20px;
+    
+    
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    font-family:  Helvetica, sans-serif;
+
+    grid-column: 1 / 2;
+    grid-column: 1 / span 5;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+    border: 1px solid white;
+
+    /* text-align: center;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif; */
+}
+
+.category1, .category2, .category3, .category4{
+    display: grid;
+    background-color: var(--overall-color);
+    margin: 20px;
+
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    font-family:  Helvetica, sans-serif;
+}
+
+.category1 img,.category2 img ,.category3 img, .category4 img  {
+    width: 50%;
+    height: auto;
+    padding: 3px;
+    border-radius: 20%;
+
+}
+.brief{
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 1 / span 2;
+    border : 1px solid white ; 
+    text-align: center;
+   /* text-align: left; */
+    padding :60px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+.category1{
+    grid-row: 1 /2;
+    grid-column: 1 / span 1;
+    border: 1px solid white;
+}
+
+.category2{
+    grid-row: 2 /3;
+    grid-column: 1 / span 1;
+    border: 1px solid white;
+}
+.category3{
+    grid-row: 1 / 2;
+    grid-column: 4 / span 1;
+    border: 1px solid white;
+}
+
+.category4{
+    grid-row: 2 / 3;
+    grid-column: 4 / span 1;
+    border: 1px solid white;
+}
+
+#milk_tea{
+    display: grid;
+    background-color: var(--overall-color);
+    margin: 20px;
+    
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    font-family:  Helvetica, sans-serif;
+
+    grid-column: 2 / span 2;
+    
+    grid-template-columns: repeat(4, 1fr);
+
+
+    border: 1px solid white;
+}
+
 .menu_item1, .menu_item2 ,.menu_item3 ,.menu_item4{    
     display: grid;
     background-color: var(--founder-color);
@@ -279,13 +379,14 @@ p.founder_1, p.founder_2, p.founder_3{
     align-content: center;
     justify-items: center;
     font-family:  Helvetica, sans-serif;
-
+    border: 1px solid white;
 
     /* text-align: center;
     color: white;
     font-family:Georgia, 'Times New Roman', Times, serif; */
     
 }
+
 .menu_item1 img ,.menu_item2 img ,.menu_item3 img,.menu_item4 img {
     width: 100%;
     height: auto;
@@ -297,5 +398,117 @@ p.founder_1, p.founder_2, p.founder_3{
     border-radius: 8px; */
     
 }
+#fruit_tea{
+    display: grid;
+    background-color: var(--overall-color);
+    margin: 20px;
+    
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    font-family:  Helvetica, sans-serif;
+
+    grid-column: 2 / span 2;
+    
+    grid-template-columns: repeat(4, 1fr);
+
+    border: 1px solid white;
+}
+.menu_item5, .menu_item6 ,.menu_item7 ,.menu_item8{
+    display: grid;
+    background-color: var(--founder-color);
+    margin: 20px;
+    
+    justify-content: space-around;
+    align-content: center;
+    justify-items: center;
+    font-family:  Helvetica, sans-serif;
+    border: 1px solid white;
+
+}
+.menu_item5 img ,.menu_item6 img ,.menu_item7 img,.menu_item8 img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 20%;
+
+    
+    
+}
+#pure_tea{
+    display: grid;
+    background-color: var(--overall-color);
+    margin: 20px;
+    
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    font-family:  Helvetica, sans-serif;
+
+    grid-column: 2 / span 2;
+    
+    grid-template-columns: repeat(4, 1fr);
+
+
+    border: 1px solid white;
+}
+.menu_item9, .menu_item10 ,.menu_item11 ,.menu_item12{
+    display: grid;
+    background-color: var(--founder-color);
+    margin: 20px;
+    
+    justify-content: space-around;
+    align-content: center;
+    justify-items: center;
+    font-family:  Helvetica, sans-serif;
+    border: 1px solid white;
+
+}
+.menu_item9 img ,.menu_item10 img ,.menu_item11 img,.menu_item12 img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 20%;
+
+}
+
+#new_launch{
+    display: grid;
+    background-color: var(--overall-color);
+    margin: 20px;
+    
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    font-family:  Helvetica, sans-serif;
+
+    grid-column: 2 / span 2;
+    
+    grid-template-columns: repeat(4, 1fr);
+
+
+    border: 1px solid white;
+}
+
+.menu_item13, .menu_item14 ,.menu_item15 ,.menu_item16{
+    display: grid;
+    background-color: var(--founder-color);
+    margin: 20px;
+    
+    justify-content: space-around;
+    align-content: center;
+    justify-items: center;
+    font-family:  Helvetica, sans-serif;
+    border: 1px solid white;
+
+}
+.menu_item13 img ,.menu_item14 img ,.menu_item15 img,.menu_item16 img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 20%;
+
+}
+
 
 
