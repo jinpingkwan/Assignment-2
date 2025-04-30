@@ -130,3 +130,72 @@ a:visited{
     padding: 20px;
 }
 
+.menu_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    background-color: var(--overall-color);
+    font-family:  "Helvetica", sans-serif;
+   
+}
+.menu_header{
+    grid-column: 1/-1;
+    color: white;
+    font-family:  "Helvetica", sans-serif;
+
+}
+.menu_list{
+    display: contents;
+   
+
+}
+.menu_item1 {    
+    text-align: center;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+.menu_item2 {    
+    text-align: center;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+.menu_item3 {    
+    text-align: center;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+.menu_item4 {    
+    text-align: center;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+.menu_item1 img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    
+}
+.menu_item2 img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    
+}
+.menu_item3 img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    
+}
+.menu_item4 img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    
+}
