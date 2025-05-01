@@ -510,5 +510,12 @@ p.founder_1, p.founder_2, p.founder_3{
 
 }
 
-
+.footer {
+    grid-column: 1 / 4;
+    background-color: #000102;
+    color: white;
+    text-align: center;
+    font-family:  Helvetica, sans-serif;
+    padding: 10px;
+  }
 
