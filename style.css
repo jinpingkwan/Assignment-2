@@ -44,14 +44,16 @@ a.header_menu:visited {
 }
 
 .header_container {
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  height: 75px;
-  width: 100%;
-  position: fixed;
-  align-items: center;
-  background-color: var(--header-color);
-  color: var(--regular-text);
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    align-content: center;
+    background-color: var(--header-color);
+    color: var(--regular-text);
 }
 
 #header,
@@ -59,47 +61,47 @@ a.header_menu:visited {
 .header_brand_name,
 .header_menu a,
 .header_about_us a {
-  background-color: var(--header-color);
+    background-color: var(--header-color);
+}
+
+.header_menu, .header_about_us{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--header-color);
 }
 
 .header_logo {
-  grid-column: 2 / 3;
-  display: grid;
-  align-content: center;
-  justify-content: center;
-}
+    grid-column: 2 / 3;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    }
 
 .header_brand_name {
-  grid-column: 3 / 7;
-  display: grid;
-  text-align: left;
-  justify-content: start;
-  align-content: center;
-  font-size: 20px;
+    grid-column: 3 / 7;
 }
 
 .header_menu {
-  grid-column: 15 / 16;
-  align-content: center;
-  justify-content: center;
-  font-size: 20px;
-  text-align: center;
+    grid-column: 15 / 16;
 }
 
 .header_about_us {
-  grid-column: 16 / 20;
-  align-content: center;
-  justify-content: center;
-  font-size: 20px;
-  text-align: center;
+    grid-column: 16 / 20;
+    align-content: center;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
 }
 
 #banner {
-  width: 100%;
+    width: 100%;
 }
 
 #menu, #about_us, #milk_tea, #fruit_tea, #pure_tea, #new_launch {
-  scroll-margin-top: 80px;
+    scroll-margin-top: 80px;
 }
 
 /* About Us */
@@ -107,138 +109,138 @@ a.header_menu:visited {
 .about_us_header,
 .about_us_header h1,
 .about_us_body {
-  background-color: var(--about-us-color);
-  color: white;
+    background-color: var(--about-us-color);
+    color: white;
 }
 
 .about_us_container {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .about_us_header h1 {
-  text-align: center;
-  font-size: 48px;
-  padding: 20px 10px;
-  font-weight: bold;
+    text-align: center;
+    font-size: 48px;
+    padding: 20px 10px;
+    font-weight: bold;
 }
 
 .about_us_body {
-  font-family: Helvetica, sans-serif;
-  line-height: 3;
-  text-align: center;
-  font-size: 20px;
-  padding: 20px;
+    font-family: Helvetica, sans-serif;
+    line-height: 3;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
 }
 
 /* Founders */
 .founders_container {
-  display: grid;
-  background-color: var(--founder-color);
-  color: var(--regular-text);
+    display: grid;
+    background-color: var(--founder-color);
+    color: var(--regular-text);
 }
 
 .founders_container_header {
-  text-align: center;
-  font-size: 36px;
-  padding: 20px 10px;
-  background-color: inherit;
-  font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 36px;
+    padding: 20px 10px;
+    background-color: inherit;
+    font-family: Helvetica, sans-serif;
 }
 
 .founders_container_body {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0 20px;
-  background-color: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 20px;
+    background-color: inherit;
 }
 
 .founder_1,
 .founder_2,
 .founder_3 {
-  display: grid;
-  margin: 20px;
-  justify-items: center;
-  align-content: center;
-  font-family: Helvetica, sans-serif;
-  background-color: inherit;
+    display: grid;
+    margin: 20px;
+    justify-items: center;
+    align-content: center;
+    font-family: Helvetica, sans-serif;
+    background-color: inherit;
 }
 
 .founder_image {
-  width: 50%;
-  height: auto;
-  padding: 10px;
-  border-radius: 50%;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .founder_1 h4,
 .founder_2 h4,
 .founder_3 h4 {
-  font-size: 25px;
-  padding: 20px 10px;
-  text-align: center;
-  font-family: Helvetica, sans-serif;
-  background-color: inherit;
+    font-size: 25px;
+    padding: 20px 10px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-color: inherit;
 }
 
 .founder_1 p,
 .founder_2 p,
 .founder_3 p {
-  font-size: 20px;
-  padding: 20px 10px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: inherit;
+    font-size: 20px;
+    padding: 20px 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: inherit;
 }
 
 /* Menu */
 .menu_container {
-  display: grid;
-  background-color: var(--overall-color);
-  color: var(--regular-text);
+    display: grid;
+    background-color: var(--overall-color);
+    color: var(--regular-text);
 }
 
 .menu_header {
-  text-align: center;
-  font-size: 36px;
-  padding: 20px 10px;
-  background-color: var(--founder-color);
+    text-align: center;
+    font-size: 36px;
+    padding: 20px 10px;
+    background-color: var(--founder-color);
 }
 
 .menu_list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  margin: 0 20px;
-  background-color: inherit;
-  font-family: Helvetica, sans-serif;
-  border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 0 20px;
+    background-color: inherit;
+    font-family: Helvetica, sans-serif;
+    border: 1px solid white;
 }
 
 .menu_category {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  margin: 20px;
-  justify-items: center;
-  align-content: center;
-  font-family: Helvetica, sans-serif;
-  background-color: inherit;
-  border: 1px solid white;
-  grid-column: 1 / -1; 
-  grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 20px;
+    justify-items: center;
+    align-content: center;
+    font-family: Helvetica, sans-serif;
+    background-color: inherit;
+    border: 1px solid white;
+    grid-column: 1 / -1; 
+    grid-row: 1 / span 2;
 }
 
 .category1,
 .category2,
 .category3,
 .category4 {
-  display: grid;
-  margin: 20px;
-  justify-items: center;
-  align-content: center;
-  background-color: inherit;
-  font-family: Helvetica, sans-serif;
-  border: 1px solid white;
+    display: grid;
+    margin: 20px;
+    justify-items: center;
+    align-content: center;
+    background-color: inherit;
+    font-family: Helvetica, sans-serif;
+    border: 1px solid white;
 }
 
 .category1 { grid-area: 1 / 1; }
@@ -250,19 +252,19 @@ a.header_menu:visited {
 .category2 img,
 .category3 img,
 .category4 img {
-  width: 50%;
-  height: auto;
-  padding: 3px;
-  border-radius: 20%;
+    width: 50%;
+    height: auto;
+    padding: 3px;
+    border-radius: 20%;
 }
 
 .brief {
-  grid-column: 2 / 4;
-  grid-row: 1 / 3;
-  border: 1px solid white;
-  text-align: center;
-  padding: 60px;
-  font-family: Arial, Helvetica, sans-serif;
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    border: 1px solid white;
+    text-align: center;
+    padding: 60px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Menu Sections */
@@ -270,14 +272,14 @@ a.header_menu:visited {
 #fruit_tea,
 #pure_tea,
 #new_launch {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background-color: var(--overall-color);
-  margin: 20px;
-  justify-items: center;
-  align-content: center;
-  font-family: Helvetica, sans-serif;
-  border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--overall-color);
+    margin: 20px;
+    justify-items: center;
+    align-content: center;
+    font-family: Helvetica, sans-serif;
+    border: 1px solid white;
 }
 
 #milk_tea{
@@ -309,13 +311,13 @@ a.header_menu:visited {
 .menu_item14,
 .menu_item15,
 .menu_item16 {
-  display: grid;
-  background-color: var(--founder-color);
-  margin: 20px;
-  justify-items: center;
-  align-content: center;
-  font-family: Helvetica, sans-serif;
-  border: 1px solid white;
+    display: grid;
+    background-color: var(--founder-color);
+    margin: 20px;
+    justify-items: center;
+    align-content: center;
+    font-family: Helvetica, sans-serif;
+    border: 1px solid white;
 }
 
 .menu_item1 img,
@@ -334,10 +336,10 @@ a.header_menu:visited {
 .menu_item14 img,
 .menu_item15 img,
 .menu_item16 img {
-  width: 100%;
-  height: auto;
-  padding: 5px;
-  border-radius: 20%;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 20%;
 }
 
 
