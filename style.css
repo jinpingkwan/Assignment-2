@@ -6,7 +6,7 @@
   --footer-color: black;
   --regular-text: white;
   --normal-link: #00bfff;
-  --hover-link: #1e90ff;
+  --hover-link: #ffffff;
   --active-link: #ff4500;
   --visited-link: #9370db;
 }
@@ -43,11 +43,7 @@ a.header_menu:visited {
   color: var(--normal-link);
 }
 
-.header_menu a {
-  height: 100%;
-  align-content: center;
-  justify-content: center;
-}
+
 
 .header_container {
     display: grid;
