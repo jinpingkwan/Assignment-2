@@ -53,8 +53,9 @@ a.header_menu:visited {
     grid-template-rows: repeat(1, 1fr);
     height: 75px;
     width: 100%;
-    position: fixed;
-    align-items: center;
+    position: fixed;/*to fix header at top of page*/
+    align-items: center;/*verticaly align at center*/
+  
     align-content: center;
     background-color: var(--header-color);
     color: var(--regular-text);
@@ -104,7 +105,7 @@ a.header_menu:visited {
 }
 
 #menu, #about_us, #milk_tea, #fruit_tea, #pure_tea, #new_launch {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 80px;/*Adjust location link redirects*/
 }
 
 /* About Us */
