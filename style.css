@@ -1,3 +1,4 @@
+/* Defining reusable color variables for consistent styling across the site */
 :root {
   --overall-color: #2e2e2e;
   --header-color: #000000;
@@ -10,14 +11,14 @@
   --active-link: #ff4500;
   --visited-link: #9370db;
 }
-
+/* Apply base font and layout reset */
 * {
   background-color: var(--overall-color);
   font-family: 'Megrim', cursive;
   margin: 0;
   box-sizing: border-box;
 }
-
+/* Styling for all links */
 a {
   display: grid;
   text-decoration: underline;
@@ -25,7 +26,7 @@ a {
   height: 75px;
 }
 
-
+/* Link state effects */
 a:hover {
   color: var(--hover-link);
 }
@@ -37,14 +38,15 @@ a:active {
 a:visited {
   color: var(--visited-link);
 }
-
+/* Override visited link color for specific header links */
 a.header_about_us:visited,
 a.header_menu:visited {
   color: var(--normal-link);
 }
 
 
-
+/* -------------------- HEADER -------------------- */
+/* Top fixed header with brand and menu links using CSS grid */
 .header_container {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
@@ -57,7 +59,7 @@ a.header_menu:visited {
     background-color: var(--header-color);
     color: var(--regular-text);
 }
-
+/* Ensure uniform header background color */
 #header,
 .header_logo,
 .header_brand_name,
@@ -65,7 +67,7 @@ a.header_menu:visited {
 .header_about_us a {
     background-color: var(--header-color);
 }
-
+/* Styling for logo, brand name and menu alignment */
 .header_menu, .header_about_us{
     display: grid;
     align-content: center;
@@ -154,7 +156,7 @@ a.header_menu:visited {
     margin: 0 20px;
     background-color: inherit;
 }
-
+/* Individual founder profiles */
 .founder_1,
 .founder_2,
 .founder_3 {
@@ -216,7 +218,7 @@ a.header_menu:visited {
     font-family: Helvetica, sans-serif;
     border: 1px solid white;
 }
-
+/* Sub-categories within the menu */
 .menu_category {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -230,7 +232,7 @@ a.header_menu:visited {
     grid-column: 1 / -1; 
     grid-row: 1 / span 2;
 }
-
+/* Four specific categories for featured drinks */
 .category1,
 .category2,
 .category3,
@@ -345,7 +347,7 @@ a.header_menu:visited {
 }
 
 
-
+/* -------------------- FOOTER -------------------- */
 .footer p {
     background-color: var(--footer-color);
     color: white;
