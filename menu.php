@@ -11,6 +11,26 @@
 </head>
     
 <body>
+    <form method="POST" action="">
+    <!-- Header section containing logo, brand name, and navigation -->
+    <div class = "header_container">
+        <div class = "header_logo">
+        <img id = "header" src="images/image (12).png" alt="logo" width = 50px height = 50px>
+        </div>
+        <div class = "header_brand_name">
+            <h1 id = "header">Chatea</h1>
+        </div>
+        <div class = "header_menu">
+            <a href="menu.php" class = "header_menu">menu</a>
+        </div>
+        <div class = "header_about_us">
+            <a href="#about_us" class = "header_about_us">about us</a>
+        </div>
+    </div>
+
+    <div class="banner_container">
+        <img src="images\banner51.png" alt="banner" id = 'banner'>
+    </div>
     
     <!-- Menu section  -->
     <div class ="menu_container">
@@ -154,6 +174,8 @@
             </div>
         </div>       
     </div>
+
+</form>
     
 </body>
 </html>
