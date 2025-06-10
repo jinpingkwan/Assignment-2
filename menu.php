@@ -194,26 +194,49 @@
             </div>
 
             <div id = "new_launch">
-                <div class ="menu_item13">
-                    <img src="images/Chatea/21.png" alt="newlaunch1"  >
-                    <h3>FRESH WATERMELON TEA</h3><br>
-                    <h3>RM 15.99</h3>
-                </div>
-                <div class ="menu_item14">
-                    <img src="images/Chatea/22.png" alt="newlaunch2"  >
-                    <h3>FRESH TROPICAL FRUIT TEA</h3><br>
-                    <h3>RM 15.99</h3>
-                </div>
-                <div class ="menu_item15">
-                    <img src="images/Chatea/23.png" alt="newlaunch3" >
-                    <h3>FRESH ORANGE TEA</h3><br>
-                    <h3>RM 15.99</h3>
-                </div>
-                <div class ="menu_item16">
-                    <img src="images/Chatea/24.png" alt="newlaunch4">
-                    <h3>FRESH KIWI TEA</h3><br>
-                    <h3>RM 15.99</h3>
-                </div> 
+                <form id="form_113" action="cart.php" method="post" onclick="document.getElementById('form_113').submit();">
+                    <div class="menu_item13">
+                        <img src="images/Chatea/21.png" alt="newlaunch1">
+                        <h3>FRESH WATERMELON TEA</h3><br>
+                        <h3>RM 15.99</h3>
+                    </div>
+                    <input type="hidden" name="item_id" value="113">
+                    <input type="hidden" name="item_name" value="FRESH WATERMELON TEA">
+                    <input type="hidden" name="item_image" value="images/Chatea/21.png">
+                </form>
+
+                <form id="form_114" action="cart.php" method="post" onclick="document.getElementById('form_114').submit();">
+                    <div class="menu_item14">
+                        <img src="images/Chatea/22.png" alt="newlaunch2">
+                        <h3>FRESH TROPICAL FRUIT TEA</h3><br>
+                        <h3>RM 15.99</h3>
+                    </div>
+                    <input type="hidden" name="item_id" value="114">
+                    <input type="hidden" name="item_name" value="FRESH TROPICAL FRUIT TEA">
+                    <input type="hidden" name="item_image" value="images/Chatea/22.png">
+                </form>
+
+                <form id="form_115" action="cart.php" method="post" onclick="document.getElementById('form_115').submit();">
+                    <div class="menu_item15">
+                        <img src="images/Chatea/23.png" alt="newlaunch3">
+                        <h3>FRESH ORANGE TEA</h3><br>
+                        <h3>RM 15.99</h3>
+                    </div>
+                    <input type="hidden" name="item_id" value="115">
+                    <input type="hidden" name="item_name" value="FRESH ORANGE TEA">
+                    <input type="hidden" name="item_image" value="images/Chatea/23.png">
+                </form>
+
+                <form id="form_116" action="cart.php" method="post" onclick="document.getElementById('form_116').submit();">
+                    <div class="menu_item16">
+                        <img src="images/Chatea/24.png" alt="newlaunch4">
+                        <h3>FRESH KIWI TEA</h3><br>
+                        <h3>RM 15.99</h3>
+                    </div>
+                    <input type="hidden" name="item_id" value="116">
+                    <input type="hidden" name="item_name" value="FRESH KIWI TEA">
+                    <input type="hidden" name="item_image" value="images/Chatea/24.png">
+                </form>
             </div>
         </div>       
     </div>
