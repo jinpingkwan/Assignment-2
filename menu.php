@@ -11,7 +11,7 @@
 </head>
     
 <body>
-    <form method="POST" action="">
+    
     <!-- Header section containing logo, brand name, and navigation -->
     <div class = "header_container">
         <div class = "header_logo">
@@ -41,12 +41,16 @@
     <!-- Menu category -->
         <div class = "menu_list">
             <div class = "menu_category">
-                <a href="#milk_tea">
+                <form id = "form_101" action="cart.php" method = "post" onclick="document.getElementById('form_101').submit();">
                     <div class = "category1">
                         <img src="images/Chatea/1.png" alt="">
                     <h3>Milk Tea</h3>
                     </div>
-                </a>
+                    <input type="hidden" name="item_id" value = "101">
+                    <input type="hidden" name="item_name" value = "Milk Tea 1">
+                    <input type="hidden" name="item_image" value = "images/Chatea/1.png">
+                    
+                </form>
                     
 
                 <a href="#pure_tea">
@@ -175,7 +179,7 @@
         </div>       
     </div>
 
-</form>
+
     
 </body>
 </html>

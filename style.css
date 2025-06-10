@@ -358,3 +358,21 @@ a.header_menu:visited {
     padding: 30px;
     font-family: Helvetica, sans-serif;
 }
+
+.all_tea{
+    display: flex;
+    flex-direction: row;
+    
+}
+.milkteaimg {
+    width: 100%;
+    height: auto;  
+    padding: 20px;
+}
+.our_tea{
+    text-align: center;
+    color: var(--regular-text) ;
+}
+
+
+
