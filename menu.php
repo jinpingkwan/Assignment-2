@@ -48,8 +48,6 @@
                 <button onclick="showCategory('new_launch')">New Launch</button>
             </div>
            
-        
-            
             <div id = "milk_tea" >
                 <form id = "form_101" action="cart.php" method = "post" onclick="document.getElementById('form_101').submit();">
                     <div class ="menu_item1">
