@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="menu.css">
     <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap" rel="stylesheet">
@@ -34,24 +35,22 @@
     
     <!-- Menu section  -->
     <div class ="menu_container">
-        <div class = "menu_header"><br><br><br>
-           
+        <div class = "menu_header">
             <h1 id = "menu">Menu</h1>
         </div>
+       
     <!-- Menu category -->
-        <div class = "menu_list">
-            <div class = "menu_category">
-                
-                    
-
-                
-                
-                
+        <div class = "menu_list" >
+             <div class ="menu_selection">
+                <button onclick="showCategory('milk_tea')">Milk Tea</button>
+                <button onclick="showCategory('pure_tea')">Pure Tea</button>
+                <button onclick="showCategory('fruit_tea')">Fruit Tea</button>
+                <button onclick="showCategory('new_launch')">New Launch</button>
+            </div>
            
-    
-
-            <div id = "milk_tea">
-
+        
+            
+            <div id = "milk_tea" >
                 <form id = "form_101" action="cart.php" method = "post" onclick="document.getElementById('form_101').submit();">
                     <div class ="menu_item1">
                         <img src="images/Chatea/1.png" alt="GOLDEN GUAN YIN MILK TEA"  >
@@ -240,6 +239,20 @@
             </div>
         </div>       
     </div>
+    <script>
+        function showCategory(categoryId) {
+            const categories = ['milk_tea', 'pure_tea', 'fruit_tea', 'new_launch'];
+            categories.forEach(id => {
+            document.getElementById(id).style.display = 'none';
+            });
+             document.getElementById(categoryId).style.display = 'block';
+             window.onload = function () {showCategory('milk_tea')}
+
+             
+    }
+     
+    
+    </script>
 
 
     
