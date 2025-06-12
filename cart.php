@@ -115,6 +115,7 @@
             echo "</div>";
 
             echo "<input type='hidden' name='item_id' value = $id>";
+            echo "<input type='hidden' name = 'item_image' value = $image>";
 
             echo "<button type='submit'>Add To Cart</button>";
         echo "</form></div>";

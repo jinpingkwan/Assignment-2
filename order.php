@@ -10,9 +10,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="POST" action="menu.php">
+    <?php
+    $image = $_POST["item_image"];
+    $tea_id = $_POST["item_id"];
+    $quantity = $_POST["quantity"];
+    $ice_level = $_POST["ice_level"];
+    $sugar_level = $_POST["sugar_level"];
+    
+    ?>
         
-    </form>
+    
     
 </body>
 </html>
