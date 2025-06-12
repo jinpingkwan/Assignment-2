@@ -29,9 +29,6 @@
         </div>
     </div>
 
-    <div class="banner_container">
-        <img src="images\banner51.png" alt="banner" id = 'banner'>
-    </div>
     
     <!-- Menu section  -->
     <div class ="menu_container">
@@ -243,9 +240,14 @@
             categories.forEach(id => {
             document.getElementById(id).style.display = 'none';
             });
-             document.getElementById(categoryId).style.display = 'block';
+             document.getElementById(categoryId).style.display = 'flex';
              window.onload = function () {showCategory('milk_tea')}
-
+            
+             const images = activeCategory.querySelectorAll('img');
+    images.forEach(img => {
+        img.style.width = '10px';   // Set your desired width
+        img.style.height = 'auto';   // Maintain aspect ratio
+    });
              
     }
      

@@ -105,18 +105,21 @@ a.header_menu:visited {
 
 #menu, #about_us, #milk_tea, #fruit_tea, #pure_tea, #new_launch {
     scroll-margin-top: 80px;/*Adjust location link redirects*/
+
 }
+
 
 /* Menu */
 
 .menu_container {
     background-color: var(--overall-color);
     color: var(--regular-text);
+    
 }
 .menu_header {
     text-align: center;
     font-size: 36px;
-    padding: 20px 10px;
+    padding: 20px 10px;  
     background-color: var(--founder-color);
 }
 .menu_list {
@@ -132,20 +135,25 @@ a.header_menu:visited {
     gap: 10px;
     padding: 10px 20px;
     border-radius: 8px;
-    background-color: red; 
+    width: 100%;
     margin: 10px;
-   
-    
-  
+
 }
 .menu_selection button{  
     background-color: white;
     padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
+    
+    
     border-radius: 4px;
    
 }
+.menu_selection button:hover{
+    background-color: lightslategray;
+    color: wheat;
+    cursor: pointer;
+    width: 50%;
+}
+
 
 /* Four specific categories for featured drinks */
 .category1,
