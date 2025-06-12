@@ -9,14 +9,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
+<style>
+    body{
+        color: white;
+    }
+
+    img{
+        width: 10%;
+    }
+</style>
 <body>
     <?php
-    $image = $_POST["item_image"];
+    
     $tea_id = $_POST["item_id"];
     $quantity = $_POST["quantity"];
     $ice_level = $_POST["ice_level"];
     $sugar_level = $_POST["sugar_level"];
     
+    
+    require_once("config.php");
+
+    if(!$conn){
+        die("Connection Fail");
+     }
+
+    $sql_insert_order = "insert into `order`(tea_id, quantity, ice_level, sugar_level) 
+                         values ($tea_id, $quantity, $ice_level, $sugar_level);";
+
+    if(!$conn->query($sql_insert_order)){
+        die("Insert Fail");
+    }
+
+ 
+
+    $conn->close();
+
+    header("Location: receipt.php");
+    exit();
     ?>
         
     

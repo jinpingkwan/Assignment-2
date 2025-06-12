@@ -9,7 +9,8 @@
  $sql = "CREATE TABLE TEA(
             tea_id int primary key auto_increment,
             tea_name varchar(50),
-            tea_price decimal(10,2)
+            tea_price decimal(10,2),
+            tea_image varchar(255)
         );";
 
  if ($conn->query($sql)) {
