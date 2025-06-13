@@ -91,6 +91,8 @@
         
             echo "</table>";
             echo "<div class='total'>Total: RM " . number_format($total, 2) . "</div>";
+
+            
         
         } else {
             echo "<div class='no-orders'>No Orders Found</div>";
@@ -98,5 +100,10 @@
      
         $conn->close();
     ?>
+    
+    <form method="POST" action="clear.php" id="clear_button">
+        <button type="submit">Clear All</button>
+       
+    </form>
 </body>
 </html>

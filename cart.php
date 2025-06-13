@@ -85,7 +85,7 @@
             //Customise Quantity
             echo "<div id = 'quantity_section'>";
                 echo "<h2>Quantity</h2>";
-                echo "<input type = 'number' name = 'quantity' required>";
+                echo "<input type = 'number' name = 'quantity' min='1' required>";
                 echo "<hr>";
             echo "</div>";
 
