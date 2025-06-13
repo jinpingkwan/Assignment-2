@@ -5,7 +5,7 @@ body{
     color: white;
     scroll-margin-top: 80px;
     padding: 20px;
-    margin-top: 75px;
+    margin-top: 80px;
     
 }
 
@@ -13,35 +13,44 @@ body{
     width: 50%;
     scroll-margin-top: 80px;
     margin-top: 75px;
-    
     padding: 20px;
     box-sizing: border-box;
 }
 #image_section{
-    width: 50%;
+    height: 80%;   
+    width: 35%;
+    border: 1px solid white;
+    
 }
 
 
 #image_section img{
-    width: 75%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; 
+     object-fit: cover;
+    
 }
 
 
 #customize_section {
+    flex: 1;
+   
     position: relative;
-    border-radius: 5px;
     height: 80%;   
     font-family: 'Exo', sans-serif;
     overflow: hidden;
+    border-radius: 5px; 
+    border: 1px solid white;
     z-index: 0; /* ensures stacking order */
-  }
+    
+    }
   
   #customize_section::before {
     content: '';
     position: absolute;
     inset: 0;
-    background-color: rgba(255, 255, 255, 0.05); /* light translucent layer */
+     /* light translucent layer */
     z-index: -1; /* behind all content */
     border-radius: 5px;
   }
@@ -65,22 +74,48 @@ body{
     display: inline;
     margin: 20px 10px;
     
+    
+}
+#quantity_section input{
+    background-color: lightgrey;
+    padding: 5px;
+
 }
 
 
 #ice_section label, #sweetness_section label{
     margin-right: 10px;
+    
 }
+
+
 
 #quantity_section hr{
     margin:10px 0px;
 }
 
+
 #customize_section form button{
     position: absolute;
-    padding: 10px;
     right: 10px;
-    bottom: 1px;
-    margin-top: 10px;
+    bottom: 10px;
+
+    padding: 12px 20px;
+    margin-top: 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Exo', sans-serif;
     color: white;
+    background: linear-gradient(1135deg, #00c6ff, #0072ff); /* nice gradient */
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#customize_section form button:hover {
+    background: linear-gradient(135deg, #00e6e6, #0066cc);
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }

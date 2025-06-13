@@ -13,6 +13,8 @@
 .menu_container {
     background-color: var(--overall-color);
     color: var(--regular-text);
+    margin-top: 80px;
+    
     
 }
 .menu_header {
@@ -28,6 +30,7 @@
     
 }
 .menu_selection{
+    
     display: flex;
     align-self: center;
     justify-content: center;
@@ -39,10 +42,9 @@
 
 }
 .menu_selection button{  
+    
     background-color: white;
     padding: 0.75rem 1.5rem;
-    
-    
     border-radius: 4px;
    
 }

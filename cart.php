@@ -44,7 +44,7 @@
             echo "<div id = 'sweetness_section'>";
                 echo "<h2>Sugar Level</h2>";
                 echo "<hr>";
-                echo "<input type='radio' id='sugar_100' name='sugar_level' value='100'>";
+                echo "<input type='radio' id='sugar_100' name='sugar_level' value='100' checked>";
                 echo "<label for='sugar_100'>100%</label>";
 
                 echo "<input type='radio' id='sugar_75' name='sugar_level' value='75'>";
@@ -65,7 +65,7 @@
             echo "<div id = 'ice_section'>";
                 echo "<h2>Ice Level</h2>";
                 echo "<hr>";
-                echo "<input type='radio' id='ice_100' name='ice_level' value='100'>";
+                echo "<input type='radio' id='ice_100' name='ice_level' value='100'checked >";
                 echo "<label for='ice_100'>100%</label>";
 
                 echo "<input type='radio' id='ice_75' name='ice_level' value='75'>";
@@ -85,7 +85,7 @@
             //Customise Quantity
             echo "<div id = 'quantity_section'>";
                 echo "<h2>Quantity</h2>";
-                echo "<input type = 'number' name = 'quantity'>";
+                echo "<input type = 'number' name = 'quantity' required>";
                 echo "<hr>";
             echo "</div>";
 
