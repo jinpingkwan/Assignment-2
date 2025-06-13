@@ -119,6 +119,6 @@ header a:visited {
     color: var(--normal-link);
 }
 
-#home_link h1{
+#home_link{
     text-decoration: none;
 }

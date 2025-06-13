@@ -95,7 +95,37 @@
             
         
         } else {
-            echo "<div class='no-orders'>No Orders Found</div>";
+            echo "<div class='no-orders'> ";
+                echo "<table>";
+                echo "<colgroup>
+                    <col style='width: 60px;'>
+                    <col style='width: 150px;'>
+                    <col style='width: 100px;'>
+                    <col style='width: 100px;'>
+                    <col style='width: 80px;'>
+                    <col style='width: 100px;'>
+                  </colgroup>";
+
+                echo "<tr>
+                    <th>Image</th>
+                    <th>Tea Name</th>
+                    <th>Ice Level</th>
+                    <th>Sugar Level</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                  </tr>";
+
+                echo "<tr style ='height: 50px;' >
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>   
+                  </tr>";
+                echo "</table>";
+            
+            echo "</div>";
         }
      
         $conn->close();
