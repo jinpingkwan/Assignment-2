@@ -12,12 +12,12 @@
   --visited-link: #9370db;
 }
 /* Apply base font and layout reset */
-* {
-  background-color: var(--overall-color);
-  font-family: 'Megrim', cursive;
-  margin: 0;
-  box-sizing: border-box;
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--overall-color); /* Optional, for consistency */
 }
+
 /* Styling for all links */
 a {
   display: grid;
