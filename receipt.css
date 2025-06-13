@@ -1,0 +1,50 @@
+body {
+    color: var(--regular-text);
+    font-family: 'Exo', sans-serif;
+    background-color: var(--overall-color);
+    padding: 20px;
+}
+
+table {
+    width: 90%;
+    margin: 100px auto 30px auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #444;
+    color: var(--regular-text);
+}
+
+th {
+    background-color: #3a3a3a;
+    font-weight: 600;
+}
+
+td img {
+    border-radius: 5px;
+    width: 50px;
+    height: auto;
+}
+
+.total {
+    text-align: right;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ff99;
+    padding-top: 10px;
+}
+
+.no-orders {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--hover-link);
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="header.css">
     <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap" rel="stylesheet">
@@ -12,14 +13,18 @@
 
 <body>
     <!-- Header section containing logo, brand name, and navigation -->
-    <header style = "left: 0px; top: 0px">
-            <img src="images/image (12).png" alt="logo" width = 50px height = 50px>
+    <header>
+           <a href="brands.html" id = "home_link">
+                <img src="images/image (12).png" alt="logo" width = 50px height = 50px>
 
-            <h1>Chatea</h1>
+                <h1>Chatea</h1>
+            </a> 
         
             <a href="menu.php">menu</a>
         
-        <a href="brands.html#about_us">about us</a>
+            <a href="brands.html#about_us">about us</a>
+
+            <a href="receipt.php">cart</a>
     </header>
     
         <?php
