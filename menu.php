@@ -38,13 +38,14 @@
        
     <!-- Menu category -->
         <div class = "menu_list" >
+            <!-- 4 button to choose category -->
              <div class ="menu_selection">
                 <button onclick="showCategory('milk_tea')">Milk Tea</button>
                 <button onclick="showCategory('pure_tea')">Pure Tea</button>
                 <button onclick="showCategory('fruit_tea')">Fruit Tea</button>
                 <button onclick="showCategory('new_launch')">New Launch</button>
             </div>
-           
+           <!-- add to cart by clicking the image -->
             <div id = "milk_tea" >
                 <form id = "form_101" action="cart.php" method = "post" onclick="document.getElementById('form_101').submit();">
                     <div class ="menu_item1">
@@ -235,6 +236,7 @@
         </div>       
     </div>
     <script>
+        // function show button category
         function showCategory(categoryId) {
             const categories = ['milk_tea', 'pure_tea', 'fruit_tea', 'new_launch'];
             categories.forEach(id => {
