@@ -16,6 +16,7 @@
     </style>
 </head>
 <body>
+    <!-- Header Bar with Navigational Links -->
     <header>
         <a href="brands.html" id = "home_link">
              <img src="images/image (12).png" alt="logo" width = 50px height = 50px>
@@ -39,6 +40,7 @@
             die("Connection Fail");
         }
      
+        // Gets attributes from order table and tea table for all orders
         $sql_get_all_orders = "SELECT 
                                   order_id,
                                   tea.tea_id,
@@ -56,9 +58,10 @@
         if(!$orders){
             die("Query Fail");
         }
-     
+        //prints table for output
         if ($orders->num_rows > 0) {
             echo "<table>";
+            //sets column width for each column
             echo "<colgroup>
                     <col style='width: 60px;'>
                     <col style='width: 150px;'>
@@ -95,6 +98,7 @@
             
         
         } else {
+            //deals when either orders are cleared or when no orders
             echo "<div class='no-orders'> ";
                 echo "<table>";
                 echo "<colgroup>
@@ -131,6 +135,7 @@
         $conn->close();
     ?>
     
+    <!-- button to clear all orders -->
     <form method="POST" action="clear.php" id="clear_button">
         <button type="submit">Clear All</button>
        

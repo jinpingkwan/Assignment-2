@@ -1,4 +1,5 @@
 <!-- CALL ONLY ONCE TOO -->
+ <!-- Creates table tea -->
  <?php
  require_once("config.php");
 

@@ -21,7 +21,7 @@
 </style>
 <body>
     <?php
-    
+    //GETS VALUES FROM CART.PHP
     $tea_id = $_POST["item_id"];
     $quantity = $_POST["quantity"];
     $ice_level = $_POST["ice_level"];
@@ -34,6 +34,7 @@
         die("Connection Fail");
      }
 
+    //CREATES ENTRY FOR ORDER IN DATABASE
     $sql_insert_order = "insert into `order`(tea_id, quantity, ice_level, sugar_level) 
                          values ($tea_id, $quantity, $ice_level, $sugar_level);";
 
@@ -45,6 +46,7 @@
 
     $conn->close();
 
+    //REDIRECTS TO RECEIPT.PHP
     header("Location: receipt.php");
     exit();
     ?>

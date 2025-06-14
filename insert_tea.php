@@ -1,3 +1,5 @@
+<!-- Call only once -->
+ <!-- Inserts values for each tea into table teA -->
 <?php
 require_once("config.php");
 
@@ -5,6 +7,7 @@ if(!$conn){
     die("Connection Fail");
  }
 
+ //SETS INITIAL TEA ID AS 101
  $sql_set_auto_inc = "alter table tea auto_increment = 101;";
 
  if ($conn->query($sql_set_auto_inc)) {
