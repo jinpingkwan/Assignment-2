@@ -3,16 +3,18 @@
     if(!$conn){
         die("Connection Fail");
     }
-    $sql_delete_all_order = "DELETE FROM `order`;";
+    // DELETE the order 
+    $sql_delete_all_order = "DELETE FROM `order`;";  
 
     $delete = $conn->query($sql_delete_all_order);
-
-    $sql_reset_increment = "ALTER TABLE `order` AUTO_INCREMENT = 101;";
+    //RESET BACK TO 101
+    $sql_reset_increment = "ALTER TABLE `order` AUTO_INCREMENT = 101;"; 
 
     $reset = $conn->query($sql_reset_increment);
     
+    //redirect the location to recipt after delete &reset
     if ($delete && $reset) {
-        header("Location: receipt.php");
+        header("Location: receipt.php");  
         exit(); // Always use exit after header redirect
     } else {
     echo "Error ";
