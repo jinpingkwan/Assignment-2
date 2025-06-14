@@ -1,0 +1,82 @@
+body {
+    color: var(--regular-text);
+    font-family: 'Exo', sans-serif;
+    background-color: var(--overall-color);
+    padding: 20px;
+}
+
+/* Styles table */
+table {
+    width: 90%;
+    margin: 100px auto 30px auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #444;
+    color: var(--regular-text);
+}
+
+th {
+    background-color: #3a3a3a;
+    font-weight: 600;
+}
+
+td img {
+    border-radius: 5px;
+    width: 50px;
+    height: auto;
+}
+
+/* Styles total price */
+.total {
+    text-align: right;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ff99;
+    padding-top: 10px;
+}
+
+/* Style when order is empty  */
+.no-orders {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--hover-link);
+}
+
+/* Styles clear button */
+#clear_button button{
+     
+    left: 70px;
+    position: relative;
+    bottom: 55px;
+
+    padding: 12px 20px;
+    margin-top: 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Exo', sans-serif;
+    color: white;
+    background: linear-gradient(1135deg, #00c6ff, #0072ff); /* nice gradient */
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+#clear_button button:hover {
+    background: linear-gradient(135deg, #00e6e6, #0066cc);
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
